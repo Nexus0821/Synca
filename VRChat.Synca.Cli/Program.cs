@@ -5,16 +5,15 @@ namespace VRChat.Synca.Cli
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            MusicPlayer.Initialize<SimpleMusicPlayer>();
-
-            for (; ; )
+            _ = Task.Run(() =>
             {
-            }
+                new StandardConsoleInputHandler();
+            });
+
+            await Task.Delay(-1);
         }
-
-
 
         static object _lockObj = new object();
     }

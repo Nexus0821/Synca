@@ -19,7 +19,7 @@ namespace VRChat.Synca.API.Osc
     public sealed class ChatboxMessageBuilder : IOscChatboxMessageBuilder
     {
         const int MAX_CHARS = 160;
-        const int MAX_PADDING_CHARS = 40;
+        const int MAX_PADDING_CHARS = 50;
         private StringBuilder _stringBuilder = new StringBuilder();
 
         public IOscChatboxMessageBuilder Append(string text)

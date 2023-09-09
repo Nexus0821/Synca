@@ -21,7 +21,7 @@ namespace VRChat.Synca.API.Scheduler
             if (allTasks.Count > 0)
             {
                 var nextRunnableItem = allTasks.Dequeue();
-                Logger.Msg(ConsoleColor.Cyan, "Directing task " + nextRunnableItem.runnable.Id);
+                // Logger.Msg(ConsoleColor.Cyan, "Directing task " + nextRunnableItem.runnable.Id);
                 nextRunnableItem.runnable.Run(nextRunnableItem.args);
             }
         }
