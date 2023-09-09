@@ -32,8 +32,8 @@ namespace VRChat.Synca
                 messageBuilder = () =>
                 {
                     return new ChatboxMessageBuilder()
-                                .AppendLine("Github: @Nexus0821")
-                                .AppendLine("i like coding stuff");
+                                .AppendLine("Synca")
+                                .AppendLine("Repo: Nexus0821/Synca");
                 }
             },
             new NexmMessageCycleItem
